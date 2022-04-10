@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GestionarCancion">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints" android:id="@+id/linearLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+    >
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnLeft"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/btnleft"
+            />
+            <Space
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+            />
+            <!--centrar: marginTop-->
+            <TextView
+                    android:text="    Nombre cancion"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblNombretema"
+                    tools:ignore="MissingConstraints"
+            />
+
+            <Space
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+            />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnRigth"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/btnrigth"
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnPause"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/btn_pause"
+
+            />
+
+            <Space
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+            />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_detener"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/btn_stop"
+
+            />
+
+            <Space
+                    android:layout_width="116dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+            />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_silence"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/btn_no_mute"
+
+            />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
